@@ -1,0 +1,10 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/LoadingScreen.uss?fileID=7433441132597879392&amp;guid=4872997b969c14a4c941d65239adf31c&amp;type=3#LoadingScreen"/>
+    <ui:VisualElement name="LoadingRoot" style="flex-grow: 1;">
+        <ui:VisualElement name="Background" style="flex-grow: 1; position: absolute; height: 100%; width: 100%; background-image: url(&quot;project://database/Assets/UI/Icons/Loading_Background.jpg?fileID=2800000&amp;guid=947ea6eabc8afc54980033d8a58bab61&amp;type=3#Loading_Background&quot;);"/>
+        <ui:VisualElement name="ContentContainer" style="flex-grow: 0; bottom: auto; top: 90%; height: 10%; flex-direction: row; align-items: center; justify-content: center; align-self: flex-end; width: 20%;">
+            <ui:Label text="0%" name="ProgressLabel" style="width: 70%; height: 100%; font-size: 70%; color: rgb(255, 255, 255); -unity-text-align: middle-right; white-space: normal; text-overflow: clip; -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/CinzelDecorative-Bold.ttf?fileID=12800000&amp;guid=2d6b41b3ee63e4d45985cca10623275f&amp;type=3#CinzelDecorative-Bold&quot;);"/>
+            <ui:VisualElement name="Spinner" class="spinner"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

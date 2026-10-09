@@ -1,0 +1,95 @@
+:root {
+}
+
+.expEnergyBar {
+    background-image: url("project://database/Assets/UI/Icons/PlayerBar_Icon.png?fileID=2800000&guid=d589528c955532949b01eda3a941dff1&type=3#PlayerBar_Icon");
+    background-color: rgba(0, 0, 0, 0);
+    width: 420%;
+    height: 20%;
+    rotate: -90deg;
+    position: absolute;
+}
+
+.inventory {
+    flex-grow: 0;
+    height: 50%;
+    width: 50%;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    background-image: url("project://database/Assets/UI/Icons/Inventory_Icon.png?fileID=2800000&guid=5402f22d9a3aad74babe7b081339b7fd&type=3#Inventory_Icon");
+}
+
+.buttonPressed {
+    -unity-background-image-tint-color: rgb(134, 134, 134);
+}
+
+.buttonSettings {
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0);
+    height: 20%;
+    width: 50%;
+    top: 1%;
+    color: rgb(255, 255, 255);
+    -unity-font-definition: url("project://database/Assets/UI/Fonts/CinzelDecorative-Regular.ttf?fileID=12800000&guid=10e478dfad5c6aa45a7ce7ddf41cf017&type=3#CinzelDecorative-Regular");
+    font-size: 50%;
+    -unity-text-align: middle-center;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    -unity-font-style: normal;
+    transition-duration: 0.3s;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.buttonSettings:hover {
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    background-image: none;
+    background-color: rgba(195, 195, 195, 0);
+    height: 20%;
+    width: 50%;
+    top: 1%;
+    color: rgb(180, 180, 180);
+    -unity-font-definition: url("project://database/Assets/UI/Fonts/CinzelDecorative-Regular.ttf?fileID=12800000&guid=10e478dfad5c6aa45a7ce7ddf41cf017&type=3#CinzelDecorative-Regular");
+    font-size: 50%;
+    -unity-text-align: middle-center;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    -unity-font-style: normal;
+    transition-duration: 0.3s;
+    scale: 1.1 1.1;
+}
+
+.buttonSettings:active {
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0);
+    height: 20%;
+    width: 50%;
+    top: 1%;
+    color: rgb(124, 124, 124);
+    -unity-font-definition: url("project://database/Assets/UI/Fonts/CinzelDecorative-Regular.ttf?fileID=12800000&guid=10e478dfad5c6aa45a7ce7ddf41cf017&type=3#CinzelDecorative-Regular");
+    font-size: 50%;
+    -unity-text-align: middle-center;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    -unity-font-style: normal;
+    transition-duration: 0.2s;
+    scale: 0.9 0.9 0.9;
+}

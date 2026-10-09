@@ -1,0 +1,13 @@
+:root {
+}
+
+.spinner {
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    width: auto;
+    height: 100%;
+    background-image: url("project://database/Assets/UI/Icons/Loading_Icon.png?fileID=2800000&guid=a96bd3f9d4c66b748a19134f4f345849&type=3#Loading_Icon");
+}

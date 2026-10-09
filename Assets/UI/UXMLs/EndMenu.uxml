@@ -1,0 +1,15 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/EndMenu.uss?fileID=7433441132597879392&amp;guid=539df52077cf20845971692cb09939fa&amp;type=3#EndMenu"/>
+    <ui:VisualElement name="EndMenuRoot" style="flex-grow: 1;">
+        <ui:VisualElement name="Background" style="flex-grow: 1; background-color: rgb(0, 0, 0); position: absolute; width: 100%; height: 100%; align-items: center; justify-content: center; align-self: center; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); background-image: url(&quot;project://database/Assets/UI/Icons/Die_Background.jpg?fileID=2800000&amp;guid=6d69c41c83df4bf4593ff6b20459d436&amp;type=3#Die_Background&quot;);">
+            <ui:VisualElement name="MenuContainer" style="flex-grow: 0; top: 12px; height: 80%; width: 75%; flex-shrink: 0;">
+                <ui:VisualElement name="EndTitle" style="flex-grow: 0; margin-bottom: 70px; height: 40%; width: 50%; justify-content: center; align-items: center; align-self: center; background-color: rgba(255, 23, 23, 0); background-image: url(&quot;project://database/Assets/UI/Icons/DieTitle.png?fileID=2800000&amp;guid=1c79b08e22ba1a0409974cfeffb0ddcd&amp;type=3#DieTitle&quot;);"/>
+                <ui:VisualElement name="ButtonsContainer" style="flex-grow: 1; width: 75%; align-items: center; align-self: center; justify-content: space-around;">
+                    <ui:Button text="Restart" name="RestartButton" class="button"/>
+                    <ui:Button text="back to main menu" name="BackToMainMenuButton" class="button"/>
+                    <ui:Button text="quit" name="QuitButton" class="button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

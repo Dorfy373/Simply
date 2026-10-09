@@ -1,0 +1,78 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/Main.uss?fileID=7433441132597879392&amp;guid=cdbf54d5c35540b4d9a076493421a9bf&amp;type=3#Main"/>
+    <ui:VisualElement name="HUDRoot" style="flex-grow: 1; align-items: center; justify-content: center; align-self: stretch; display: flex;">
+        <ui:VisualElement name="TopRow" style="flex-grow: 0; align-items: center; align-self: stretch; justify-content: space-between; flex-shrink: 1; height: 30%; width: 100%; flex-direction: row; top: -12%;">
+            <ui:VisualElement name="MapContainer" style="flex-grow: 0; height: 100%; width: 20%; background-image: none; position: relative;">
+                <ui:VisualElement name="Minimap_View" style="flex-grow: 0; width: 80%; right: 10%; height: 70%; bottom: 14%; background-image: url(&quot;project://database/Assets/UI/Rendering/Minimap_Texture.renderTexture?fileID=8400000&amp;guid=4d7d28667cca61644903ad0832b08612&amp;type=2#Minimap_Texture&quot;); flex-shrink: 0; position: absolute;"/>
+                <ui:VisualElement name="MapIcon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Icons/Map_Icon.png?fileID=2800000&amp;guid=49fa3c5b7c269d24b863ee82cd049dbf&amp;type=3#Map_Icon&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="TopRightGroup" style="flex-grow: 0; width: 33%; height: 50%; top: -26%; flex-direction: row;">
+                <ui:Button text="" name="PauseButton" style="align-self: center; justify-content: space-between; align-items: flex-end; align-content: flex-start; height: 75%; width: 20%; top: auto; right: -77%; background-image: url(&quot;project://database/Assets/UI/Icons/Settings_Icon.png?fileID=2800000&amp;guid=adbf81e80b12cdc4093e7730fc6ab1a0&amp;type=3#Settings_Icon&quot;); background-color: rgba(188, 188, 188, 0); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0);"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="BottomRow" style="flex-grow: 0; height: 45%; justify-content: space-between; align-items: center; width: 100%; flex-direction: row; align-self: stretch; bottom: -12%;">
+            <ui:VisualElement name="EnergyExpGroup" style="flex-grow: 0; align-items: center; align-self: flex-end; justify-content: center; align-content: stretch; height: 345px; width: 124px; flex-shrink: 1; left: auto; flex-direction: row; right: -7px;">
+                <ui:VisualElement name="EnergyGroup" style="flex-grow: 0; width: 50%; flex-direction: column; align-items: center; justify-content: center; align-self: stretch; height: 100%;">
+                    <ui:VisualElement name="EnergyFillBar" style="flex-grow: 0; height: 67%; width: 50%; bottom: 9%; left: auto; background-color: rgb(0, 122, 215); rotate: 0 0 0 0; min-height: auto; position: absolute; right: 31%;"/>
+                    <ui:VisualElement name="EnergyBar" class="expEnergyBar" style="top: 47%;"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="ExperienceGroup" style="flex-grow: 0; height: 100%; width: 50%; flex-direction: column; align-items: center; justify-content: center; align-self: stretch;">
+                    <ui:VisualElement name="ExpFillBar" style="flex-grow: 0; height: 67%; width: 50%; bottom: 9%; left: auto; background-color: rgb(0, 118, 12); position: absolute; rotate: 0 0 0 -90deg; background-size: 100% 100%; right: 31%;"/>
+                    <ui:VisualElement name="ExpBar" class="expEnergyBar" style="top: 47%;"/>
+                    <ui:Label text="1" name="LevelNumber" style="-unity-text-align: middle-left; white-space: pre-wrap; text-overflow: clip; height: 10%; width: 21%; align-self: center; align-content: center; justify-content: space-around; align-items: center; -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/CinzelDecorative-Bold.ttf?fileID=12800000&amp;guid=2d6b41b3ee63e4d45985cca10623275f&amp;type=3#CinzelDecorative-Bold&quot;); color: rgb(255, 176, 0); top: 5%; left: -8%; font-size: 20px;"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="HealthAndInventoryGroup" style="flex-grow: 0; height: 69%; width: 41%; flex-direction: row; align-items: center; justify-content: center; align-self: auto; min-width: auto; flex-shrink: 1; left: 10%; bottom: -10%;">
+                <ui:VisualElement name="WeaponSlots" style="flex-grow: 0; flex-shrink: 1; flex-direction: row; align-items: center; justify-content: center; align-self: flex-end; width: 25%; height: 50%;">
+                    <ui:VisualElement name="WeaponSlot1" class="inventory" style="flex-grow: 0; justify-content: center; align-self: flex-end; align-items: center; height: 50%; width: 50%;">
+                        <ui:VisualElement name="WeaponIcon1" style="flex-grow: 1; width: 50%; height: 50%; position: absolute;"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="WeaponSlot2" class="inventory">
+                        <ui:VisualElement name="WeaponIcon2" style="flex-grow: 1; position: absolute; width: 50%; height: 50%;"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="HealthBarContainer" style="flex-grow: 0; height: 70px; width: 200px; flex-direction: row; align-items: center; justify-content: center; align-self: flex-end;">
+                    <ui:VisualElement name="HealthFillBar" style="flex-grow: 1; position: absolute; bottom: 0; left: 5%; top: 8px; width: 88%; height: 33%; background-color: rgb(140, 0, 0);"/>
+                    <ui:VisualElement name="HealthBar" style="flex-grow: 1; left: 0; top: 0; right: 0; bottom: 0; background-image: url(&quot;project://database/Assets/UI/Icons/PlayerBar_Icon.png?fileID=2800000&amp;guid=d589528c955532949b01eda3a941dff1&amp;type=3#PlayerBar_Icon&quot;); width: 100%; position: absolute; height: 65%;"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="PotionSlots" style="flex-grow: 0; height: 50%; width: 25%; flex-direction: row; align-items: center; justify-content: center; align-self: flex-end;">
+                    <ui:VisualElement name="PotionSlot1" class="inventory" style="flex-grow: 0; align-items: center; justify-content: center; height: 50%; width: 50%;">
+                        <ui:VisualElement name="PotionIcon1" style="flex-grow: 1; position: absolute; width: 50%; height: 50%;"/>
+                        <ui:Label text="50" name="PotionCount1" style="left: -21%; bottom: -17%; -unity-text-outline-color: rgb(245, 245, 245); color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/CinzelDecorative-Bold.ttf?fileID=12800000&amp;guid=2d6b41b3ee63e4d45985cca10623275f&amp;type=3#CinzelDecorative-Bold&quot;);"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="PotionSlot2" class="inventory" style="flex-grow: 0; height: 50%; width: 50%;">
+                        <ui:VisualElement name="PotionIcon2" style="flex-grow: 1; position: absolute; width: 50%; height: 50%;"/>
+                        <ui:Label text="50" name="PotionCount2" style="color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/CinzelDecorative-Black.ttf?fileID=12800000&amp;guid=5a20ff53e06edc745987ba94ed004e55&amp;type=3#CinzelDecorative-Black&quot;); left: -21%; top: auto; bottom: -17%;"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="ActionButtonsGrid" style="flex-grow: 0; width: 30%; height: 100%;">
+                <ui:VisualElement name="ActionButtonsTopRow" style="flex-grow: 0; flex-direction: row; align-items: center; justify-content: center; height: 50%;">
+                    <ui:Button text="&#10;" name="DashButton" style="background-image: url(&quot;project://database/Assets/UI/Icons/Dash_Icon.png?fileID=2800000&amp;guid=1ab28c8a9cbea7b418ff9ec5d5986710&amp;type=3#Dash_Icon&quot;); width: 30%; height: 65%; background-color: rgba(188, 188, 188, 0); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); top: 18%; left: -7%;"/>
+                    <ui:Button text="&#10;" name="JumpButton" style="top: 18%; left: 8%; height: 65%; width: 30%; align-items: flex-end; align-self: flex-start; justify-content: space-around; background-image: url(&quot;project://database/Assets/UI/Icons/Jump_Icon.png?fileID=2800000&amp;guid=17224ff299c0c5446a46d2576e89db96&amp;type=3#Jump_Icon&quot;); background-color: rgba(188, 188, 188, 0); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0);"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="ActionButtonsBottomRow" style="flex-grow: 0; flex-direction: row; align-items: center; height: 50%;">
+                    <ui:Button text="&#10;" name="AttackButton" style="height: 65%; width: 30%; top: 18%; left: 12%; align-items: flex-end; justify-content: space-around; align-content: flex-start; align-self: flex-start; background-image: url(&quot;project://database/Assets/UI/Icons/Attack_Icon.png?fileID=2800000&amp;guid=09b7a58c8bebb5541b1a58e2e306fe46&amp;type=3#Attack_Icon&quot;); background-color: rgba(188, 188, 188, 0); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0);"/>
+                    <ui:Button text="" name="RunButton" style="align-self: flex-start; justify-content: space-around; align-items: flex-end; height: 65%; width: 30%; top: 18%; left: 27%; background-image: url(&quot;project://database/Assets/UI/Icons/Run_Icon.png?fileID=2800000&amp;guid=807a280f5e7e8f84680a131cb13ab567&amp;type=3#Run_Icon&quot;); background-color: rgba(188, 188, 188, 0); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0);"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="InteractPrompt" style="flex-grow: 1; position: absolute; top: 0%; right: 35%; background-image: url(&quot;project://database/Assets/UI/Icons/Interaction_Icon.png?fileID=2800000&amp;guid=ae28ad493ff69d947ac01afa5439fbdb&amp;type=3#Interaction_Icon&quot;); width: 5%; height: 20%; flex-direction: row; align-items: center; justify-content: center; align-self: center; display: none;">
+                <ui:Label text="E" name="InteractText" style="width: 50px; height: 50px; font-size: 30%; top: -11%; right: -20%; -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/CinzelDecorative-Bold.ttf?fileID=12800000&amp;guid=2d6b41b3ee63e4d45985cca10623275f&amp;type=3#CinzelDecorative-Bold&quot;); color: rgb(123, 113, 97); display: flex; position: absolute;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="PauseOverlay" style="flex-grow: 1; position: absolute; top: 0; left: 0; bottom: 0; right: 0; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.59); display: none;">
+        <ui:VisualElement name="PausePanel" style="flex-grow: 0; bottom: auto; width: 50%; position: relative; height: 50%; padding-top: 30px; padding-right: 30px; padding-bottom: 30px; padding-left: 30px; align-items: center; justify-content: center; display: none; flex-shrink: 0;">
+            <ui:Label text="Pause" name="PauseTitle" style="font-size: 60%; -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/CinzelDecorative-Black.ttf?fileID=12800000&amp;guid=5a20ff53e06edc745987ba94ed004e55&amp;type=3#CinzelDecorative-Black&quot;); color: rgb(255, 255, 255); white-space: nowrap; -unity-text-align: upper-center; margin-top: 25px; margin-right: 25px; margin-bottom: 25px; margin-left: 25px; top: -10%; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"/>
+            <ui:Button text="Resume" name="ResumeButton" class="buttonSettings" style="font-size: 40%; white-space: nowrap;"/>
+            <ui:Button text="settings" name="SettingsButton" class="buttonSettings" style="font-size: 40%;"/>
+            <ui:Button text="main menu" name="MainMenuButton" class="buttonSettings" style="font-size: 40%;"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="SettingsPanel" style="flex-grow: 0; position: relative; bottom: auto; height: 50%; width: 50%; flex-shrink: 1; align-items: center; justify-content: center; display: none;">
+            <ui:Label text="Settings" name="SettingsTitle" style="width: 50%; font-size: 60%; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/CinzelDecorative-Black.ttf?fileID=12800000&amp;guid=5a20ff53e06edc745987ba94ed004e55&amp;type=3#CinzelDecorative-Black&quot;); -unity-text-align: middle-center; top: -30%;"/>
+            <ui:Label text="Music volume" name="MusicLabel" style="font-size: 40%; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/CinzelDecorative-Regular.ttf?fileID=12800000&amp;guid=10e478dfad5c6aa45a7ce7ddf41cf017&amp;type=3#CinzelDecorative-Regular&quot;);"/>
+            <ui:Slider label="" value="42" high-value="1" name="MusicVolumeSlider" style="width: 50%;"/>
+            <ui:Button text="" name="SettingsBackButton" style="position: absolute; top: 5%; left: 3%; width: 10%; height: 15%; background-color: rgba(188, 188, 188, 0); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); background-image: url(&quot;project://database/Assets/UI/Icons/Exit_Icon.png?fileID=2800000&amp;guid=465c0bf6d780ef94a89eeea009714162&amp;type=3#Exit_Icon&quot;);"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
