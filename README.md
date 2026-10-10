@@ -67,7 +67,7 @@ I made the core design and architectural decisions while using AI as a supportin
 ![End Menu](Screenshots/End-Menu.png)
 
 ### Loading Screen
-![Loading Screen](Screenshots/Loading_Menu.png)
+![Loading Screen](Screenshots/Loading-Menu.png)
 
 ### Settings
 ![Settings](Screenshots/Settings-Menu.png)
