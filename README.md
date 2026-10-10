@@ -1,3 +1,5 @@
+![Simply Game Banner](banner.png)
+
 # 🐰 Simply — Action RPG Prototype
 
 A 3D Action RPG prototype developed with **Unity and C#** as a personal game development portfolio project.
@@ -74,6 +76,10 @@ I made the core design and architectural decisions while using AI as a supportin
 
 ### Enemy Die
 ![Enemy Die](Screenshots/Enemy_Die.png)
+
+## 🎬 Gameplay Video
+
+[▶️ Watch Gameplay](Videos/Simply-Gameplay.mp4)
 
 ## 📦 Download
 
