@@ -77,6 +77,10 @@ I made the core design and architectural decisions while using AI as a supportin
 ### Enemy Die
 ![Enemy Die](Screenshots/Enemy_Die.png)
 
+## 🎬 Gameplay Video
+
+[▶️ Watch Gameplay](Videos/Simply-Gameplay.mp4)
+
 ## 📦 Download
 
 A playable Windows build will be available in the [Releases](../../releases) section.
