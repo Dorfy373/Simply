@@ -1,3 +1,5 @@
+![Simply Game Banner](banner.png)
+
 # 🐰 Simply — Action RPG Prototype
 
 A 3D Action RPG prototype developed with **Unity and C#** as a personal game development portfolio project.
